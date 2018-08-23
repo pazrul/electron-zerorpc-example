@@ -32,7 +32,7 @@ I dunno, sometimes it's fun to play around with technologies without having to g
 
 ## Getting Started
 clone repo:
-`git clone <repo>`
+`git clone https://github.com/pazrul/electron-zerorpc-example.git`
 
 install zmq
 * Linux: `sudo apt-get install libzmq3-dev`
