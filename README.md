@@ -56,10 +56,10 @@ run electron to see it working
 The interface has a number of buttons, all of which will send information to Python through ZeroRPC.
 
 ### What do the buttons do?
-1. `Say Hello` - Sends a pre-set string to Python. Calls the `hello` method on the someDumbClass instance
-2. `Get Files` - Calls the `get_array` method on the SomeDumbClass instance. Returns a list of files in the running directory
-3. `Get Object` - Calls the `get_object` method on the SomeDumbClass instance. Returns a dict from Python to the JS client
-4. `Send Value` - Calls the `determine_type` method on the SomeDumbClass instance. You pass a value, python tells you the type, and give the value back.
+1. `Say Hello` - Sends a pre-set string to Python. Calls the `hello` method on the someBasicClass instance
+2. `Get Files` - Calls the `get_array` method on the someBasicClass instance. Returns a list of files in the running directory
+3. `Get Object` - Calls the `get_object` method on the someBasicClass instance. Returns a dict from Python to the JS client
+4. `Send Value` - Calls the `determine_type` method on the someBasicClass instance. You pass a value, python tells you the type, and give the value back.
     * The type sent to the Python code is determined by the radio button selected above the Send Value button.
 
 ### How do the buttons do?
