@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>JS &amp; Python interaction</title>
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=VT323'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="client.js"></script>
+
+</head>
+
+<body>
+    <div class="column width-12 container">
+        <div class="header-container">
+            <h1 class="column width-12">Talking to Python using ZeroRPC with Electron</h1>
+            <h2 class="error hidden" id="error"></h2>
+        </div>
+        <div class="column width-12 flex-wrap main-content">
+            <div class="column width-9 flex-wrap">
+                <input id="sayHello" type="button" class="button column width-12" value="Say Hello">
+                <input id="getArray" type="button" class="button column width-12" value="Get Files">
+                <input id="getObject" type="button" class="button column width-12" value="Get Object">
+                <div class="column width-12 flex-wrap">
+                    <div class="column width-12 flex-wrap flex-center" id="typeGroup">
+                        <label class="column width-3">
+                            <input type="radio" value="string" name="to_send">
+                            String
+                        </label>
+                        <label class="column width-3">
+                            <input type="radio" value="int" name="to_send">
+                            Int
+                        </label>
+                        <label class="column width-3">
+                            <input type="radio" value="float" name="to_send">
+                            Float
+                        </label>
+                        <label class="column width-3">
+                            <input type="radio" value="list" name="to_send">
+                            List
+                        </label>
+                        <label class="column width-3">
+                            <input type="radio" value="object" name="to_send">
+                            Object
+                        </label>
+                        <label class="column width-3">
+                            <input type="radio" value="bool" name="to_send">
+                            Boolean
+                        </label>
+                    </div>
+                    <input id="sendValue" type="button" class="button column width-12" value="Send Value">
+                </div>
+            </div>
+            <div class="column width-3 flex collapse">
+                <ul class="list-container column width-12" id="output"></ul>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
